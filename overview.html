@@ -146,12 +146,12 @@
 				dip pen nanolithography.</p>
 				
 								
-				<div class="center">
+				
 				<video width="960" height="720" controls autoplay loop>
 					<source src="DPNL.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>The baits are fully complementary to the targets except for the point of interest. In our example it is position 33. The nucleobase in the bait 
 				strand at the point of interest is replaced with a cytosine base (C). The 3` end of the modified bait strand is functionalized with a fluorophore (ATTO488) and the 5` end 
@@ -161,12 +161,12 @@
 				therefore, their local concentration is very high. Hybridization of the targets with the baits effectively pulls the target molecules from solution and concentrates them in the printed 
 				sub-micron isles. Thus, even samples containing DNA at a very low concentration can be analyzed using the nanobiosensor.</p>
 				
-				<div class="center">
+				
 				<video width="960" height="720" controls autoplay loop>
 					<source src="hybridization.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>At the site of a potential mutation (position 33 in our example), we may have 4 possible base pairings that need to be identified: C-T, C-C, C-A or C-G
 				(keep in mind that the nucleobase in the bait strand was intentionally changed to C prior to printing).</p>
@@ -176,66 +176,66 @@
 				with piperidine which cuts the DNA backbone in both strands if the mismatch is C-C or cuts only the bait strand. In the former case (illustrated below) the emission is lost.
 				In the latter case, only the backbone of the bait strand is cut. This does not lead to de-hybridization and, therefore, the emission is preserved.</p>
 				
-				<div class="center">
+				
 				<img src="CC_mod.jpg" alt="C-C modification">
-				</div>
+				
 				
 								
 				<p>The second isle is incubated with NH<sub>2</sub>OH followed by incubation with potassium permanganate (KMnO<sub>4</sub>). KMnO<sub>4</sub> is specific to mismatched thymine bases.
 				Thus, if there is a mismatched C or T nucleobase, those bases will be nicked. The piperidine will then cut the DNA backbone of the strands with nicked bases. Here is an example of how it works with a C-T mismatch:</p>
 				
-				<div class="center">
+				
 				<img src="CT_mod.jpg" alt="C-T modification">
-				</div>
+				
 				
 				<p>The third isle is incubated with NH2OH. It will create a nick in the mismatched C base if there is one at position 33. The piperidine treatment will cut the DNA backbone 
 				if the base(s) got nicked. The piperidine treatment is followed by exposing the isle to an elevated temperature that is below the melting point of the whole DNA molecule 
 				but above the melting point of the fragment that might have been cleaved. Thus, heat is used to de-hybridize only the DNA fragments of the cleaved strands. Here is an example of how it works with a C-C mismatch:</p>
 				
-				<div class="center">
+				
 				<img src="CA_mod.jpg" alt="C-T modification">
-				</div>
+				
 				
 				<p>If the base pair at the site of possible mutation is C-C, all three tests will cut the DNA strand at that point (due to the presence of hydroxylamine in all three tests)
 				resulting in the loss of fluorescence. We designate this outcome as “0” in the binary code. So the overall signal obtained from all three isles reads “0-0-0”</p>
 				
-				<div class="center">
+				
 				<video width="960" controls autoplay loop>
 					<source src="cc_vid.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>If the base pair in position 33 is C-T, the first test only nicks the DNA strand without cleaving it, as a result, no fluorescence is lost. We designate this outcome as “0” in the binary code. 
 				The second test cleaves the strand at position 33, resulting in the loss of fluorescence. The last test nicks and de-hybridizes the DNA strand, resulting in the loss of emission as well. Thus, the output signal
 				for a C-T mismatch reads “1-0-0”.</p>
 				
-				<div class="center">
+				
 				<video width="960" controls autoplay loop>
 					<source src="ct_vid.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>If the position 33 base pair is C-A, we can expect no loss of fluorescence for the first test (specific for C-C) or second test (specific for C-C or C-T).
 				The third test would lead to the loss of fluorescence through nicking and de-hybridizing the DNA strand at the site of the mutation. The output signal for a C-A base mismatch reads “1-1-0”.</p>
 				
-				<div class="center">
+				
 				<video width="960" controls autoplay loop>
 					<source src="ca_vid.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>The last possible base pair combination that needs identification is C-G. Since cytosine and guanine are complementary bases, they do not form a bulge at position 33 and are not nicked by either NH4OH or KMnO4.
 				Consequently, piperidine does not cut the strands in any of the three tests. As a result, fluorescence is not lost in any of the isles and the output signal reads “1-1-1” for a C-G base pair combination.</p>
 				
-				<div class="center">
+				
 				<video width="960" controls autoplay loop>
 					<source src="cg_vid.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				</div>
+				
 				
 				<p>Thus, the nanosensor generates binary codes that are uniquely associated with bases present at a given position in the target strands.</p>
 				
