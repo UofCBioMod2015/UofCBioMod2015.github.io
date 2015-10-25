@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 	<head>
-		<title>FB</title>
+		<title>Cleavage of dsDNA in solution</title>
 		<meta charset="UTF-8">
 		<style>
 		
@@ -35,11 +35,27 @@
 			
 			{color:white;
 			font-family: Calibri;
+			font-size: 32px;
+			text-align: left;
+			}
+			
+			h2
+			
+			{color:white;
+			font-family: Calibri;
 			font-size: 28px;
 			text-align: left;
 			}
 			
+			h3
 			
+			{color:white;
+			font-family: Calibri;
+			font-style: Italic;
+			font-size: 20px;
+			text-align: left;
+			}
+		
 			p
 			{color:white;
 			font-family: Calibri;
@@ -47,7 +63,6 @@
 			text-align: justify;
 			}
 		
-			
 			
 		</style> 	
 		
@@ -63,101 +78,89 @@
 		
 		<section>
 			<span>section</span>
-				<h1>Free nucleobase experiments in solution</h1>
+				<h1>dsDNA cleavage experiments in solution</h1>
 		</section>
 
 		<section>
 			<span>section</span>
-				<p></p>
+			
+				<h2>Introduction</h2>
+			
+				<p>Based on current literature, potassium permanganate (KMnO<sub>4</sub>) is a molecule able to modify the ring system of DNA bases. Specifically, KMnO<sub>4</sub> 
+				selectively modifies thymine bases at a much higher rate than any other nucleotides. This means KMnO<sub>4</sub> can be exploited to selectively modify the ring system of thymine in an environment
+				containing all other bases. Piperidine (C<sub>5</sub>H<sub>11</sub>N) is a molecule capable of interacting with a modified base by breaking down the DNA backbone. Due to the characteristics of these two molecules,
+				they can be used in tandem to target and selectively cleave DNA strands at the site of mismatched thymine bases.</p>
 				
-				<p></p>
+				<p>The goal of the experiments outlined in this section is to demonstrate that we can optimize this reaction and selectively cleave DNA at the site of a T-T mismatch on hybridized strands of DNA.
+				To optimize the chemical cleavage of the mismatch (CCM) reaction we designed two DNA sequences that are complementary to each other except for a single position along the sequence. 
+				Each strand was labelled with a fluorophore that was positioned on opposing sides of the mismatched bases.</p>
 				
+				<img src="S1.jpg" alt="FRET pair">
+				<h3>Figure 1. The sequences of two DNA strands with a single point mutation designed for the CCM experiments in solution.</h3>
+				
+				<p>Having these two fluorophores in close proximity enables a process known as Forster Resonance Energy Transfer (FRET). FRET is a useful tool to help gauge the average distance between specific molecules
+				in a solution. Our procedure utilized FRET to determine whether CCM had occurred and to what extent it had occurred. In our design two different fluorophores are located on the same hybridized DNA molecule
+				in close proximity. The “donor” fluorophore is excited light with a wavelength of 494 nm and has the emission maximum at 515 nm. The absorption spectrum of the acceptor overlaps with the emission spectrum 
+				of the donor. When a donor fluorophore is excited in close proximity to an acceptor, the excited energy of the donor is transferred to the acceptor causing the acceptor to fluoresce. When the DNA is cleaved
+				at the point of mismatch, the donor and acceptor are no longer held together as part of the same molecule. Consequently, they begin to diffuse apart and the energy transfer is no longer possible because FRET
+				is very sensitive to the distance between the donor and acceptor (the efficiency is inversely proportional to the sixth power of the distance). Thus, in the event of cleavage only the donor emission should be
+				observed.</p>
+				
+				<h2>Methods</h2>
 								
-				<p></p>
+				<p>DNA oligonucleotides were synthesized by IDT DNA. Piperidine (C<sub>5</sub>H<sub>11</sub>N), potassium permanganate (KMnO<sub>4</sub>), sodium chloride, sodium hydroxide, hydrochloric acid, 
+				were purchased from Sigma-Aldrich and used without further purification. All the experiments were performed in aqueous solutions. Water was purified using a Simplicity UV ultrapure water
+				purification system (Millipore). In all the experiments, unless otherwise stated, the final concentrations of the reagents were maintained constant: [Donor] = 500 nM, [Acceptor] = 1000 nM,
+				[NaCl] =  100 mM, [KMnO<sub>4</sub>] = 0.1 mM, [NaHSO<sub>3</sub>] = 1 mM, [C<sub>5</sub>H<sub>11</sub>N] =  1 mM. The emission spectra were recorded using a Cary Eclipse fluorescence spectrophotometer (Varian).</p>
 				
-				<p></p>
 				
-				<p></p>
+				
+				<h2>Results and discussion</h2>
+				
+				<p>Initially, solutions of the two DNA sequences were hybridized by mixing solutions in the presence of NaCl. This resulted in hybridized DNA strands containing both a donor and acceptor fluorophore positioned
+				just 9 bases apart along the DNA strand. Situating the fluorophores in close proximity enabled donor energy transfer to the acceptor, which produced the FRET signal we used to analyze the extent of strand cleavage.</p>
+				
+				<img src="S2.jpg" alt="FRET">
+				<h3>Figure 2. Emission spectra of the donor (white solid line), acceptor (grey solid line), and hybridized donor and acceptor (dotted line). The excitation wavelength was 494 nm. The acceptor
+				intensity in the hybrid is higher due to FRET.</h3>
+				
+				
+				<p>The chemical cleavage reaction was the performed in 3 steps. First, KMnO4 was introduced to modify the ring system of mismatched thymine bases (link to vlads explanation of modification). 
+				Second the “stop buffer” (NaHSO3) was added after precisely 5 minutes of KMnO4 incubation. This neutralized the KMnO4 in solution, which halted further modification of DNA bases, by KMnO4.
+				Finally, piperidine was added, which cleaved the DNA strands at the site of the modified bases.</p>
+				
+				<img src="S3.jpg" alt="Before and after cleavage">
+				<h3>Figure 3. Emission spectra of the donor and acceptor before (dotted line) and after (solid line) the DNA solution was subjected to CCM reaction. The excitation wavelength was 494 nm.</h3>
+				
+				<p>The data demonstrates a decrease of the acceptor fluorescence signal and an increase of the donor emission. These results indicate the FRET system was largely destroyed, i.e. 
+				the donor is no longer in close enough proximity to donate its energy to the acceptor. This indicates that the CCM procedure was successful in cleaving the hybridized DNA strands with a T-T base pair mismatch.</p>
+				
+				<p>In order to confirm this CCM reaction was working as expected we performed a series of control experiments to further test our cleavage hypothesis. To demonstrate that KMnO4 is 
+				essential to carrying out cleavage, the above 3-step procedure was carried out without KMnO<sub>4</sub>.</p>
+				
+				<img src="S4.jpg" alt="Control 1">
+				<h3>Figure 4. Emission spectra of the donor and acceptor before (white line) and after (grey line) the DNA solution was subjected to CCM procedure in the absence of KMnO4. The excitation wavelength was 494 nm.</h3>
+				
+				<p>This data shows that the change in the FRET signal is negligible after the same CCM procedure is carried out without the presence of KMnO<sub>4</sub>. This supports the hypothesis that KMnO<sub>4</sub>
+				is responsible for modifying the DNA bases at the T-T mismatch site, in order for piperidine to cleave the DNA backbone.</p>
+				
+				<p>To confirm that piperidine is the agent responsible for cleaving the backbone of a modified base, a third control experiment was performed, demonstrating that KMnO4 is not capable of cleaving 
+				the DNA base without the introduction of piperidine. In this control experiment, the 3-step CCM procedure was performed without the addition of piperidine.</p>
+				
+				<img src="S5.jpg" alt="Control 2">
+				<h3>Figure 5. Emission spectra of the donor and acceptor before (white line) and after (grey line) the DNA solution was subjected to CCM procedure in the absence of piperidine. The excitation wavelength was 494 nm.</h3>
+				
+				
+				<p>There is no significant change in FRET observed in the collected data when piperidine is not introduced to the solution. This supports our claim that both KMnO4 and piperidine are required for cleaving 
+				mismatched DNA bases.</p>
 
-				<p></p>
 				
-								
-				
-				<video width="960" height="720" controls autoplay loop>
-					<source src="DPNL.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				
-				
-				<p></p>
 
-				<p></p>
+				
+			
 				
 				
-				<video width="960" height="720" controls autoplay loop>
-					<source src="hybridization.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
 				
-				
-				<p></p>
-				
-				<p></p>
-				
-				
-				<img src="CC_mod.jpg" alt="C-C modification">
-				
-				
-								
-				<p></p>
-				
-				
-				<img src="CT_mod.jpg" alt="C-T modification">
-				
-				
-				<p></p>
-				
-				
-				<img src="CA_mod.jpg" alt="C-T modification">
-				
-				
-				<p></p>
-				
-				
-				<video width="960" controls autoplay loop>
-					<source src="cc_vid.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				
-				
-				<p></p>
-				
-				
-				<video width="960" controls autoplay loop>
-					<source src="ct_vid.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				
-				
-				<p></p>
-				
-				
-				<video width="960" controls autoplay loop>
-					<source src="ca_vid.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				
-				
-				<p></p>
-				
-				
-				<video width="960" controls autoplay loop>
-					<source src="cg_vid.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-				
-				
-				<p></p>
 				
 				
 		</section>
